@@ -37,7 +37,7 @@ function tweetSnozz() {
         if (!error) {
             noun = nounData.word;
             // if we got back some data from the API and it didn't error
-            if (!wordfilter.blacklisted(noun)){
+            if (!wordfilter.blacklisted(noun) && !(word[0] === word[0].toUpperCase())){
                 console.log(noun);
                 fruitstring = noun + fruits.pick();
                 tweet += fruitstring + ' taste like ' + fruitstring +'!';
