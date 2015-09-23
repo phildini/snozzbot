@@ -1,0 +1,39 @@
+{
+  "name": "snozzbot",
+  "description": "The snozzbots taste like snozzbots!",
+  "version": "0.1.0",
+  "homepage": "https://github.com/phildini/snozzbot",
+  "author": {
+    "name": "Philip James",
+    "email": "pjj@philipjohnjames.com",
+    "url": "philipjohnjames.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phildini/snozzbot.git"
+  },
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/phildini/snozzbot/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/phildini/snozzbot/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "ent": "2.2.0",
+    "node-restclient": "0.0.1",
+    "request": "~2.44.0",
+    "rita": "~1.0.951",
+    "twit": "~1.1.19",
+    "underscore": "~1.5.1",
+    "underscore.deferred": "~0.4.0",
+    "wordfilter": "*"
+  },
+  "keywords": []
+}
