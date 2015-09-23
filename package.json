@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "ent": "2.2.0",
+    "iscool": "^1.1.7",
     "node-restclient": "0.0.1",
     "request": "~2.44.0",
     "rita": "~1.0.951",
