@@ -1,10 +1,7 @@
 var request = require('request');
-var _ = require('underscore');
-_.mixin( require('underscore.deferred') );
 var Twit = require('twit');
 var T = new Twit(require('./config.js'));
 var createIsCool = require('iscool');
-var ent = require('ent');
 var wordnikKey = require('./permissions.js').key;
 
 var getNounUrl = 'http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=noun&excludePartOfSpeech=noun-plural,noun-posessive,proper-noun,proper-noun-plural,proper-noun-posessive&minCorpusCount=100&minDictionaryCount=13&minLength=3&maxLength=8&api_key=' + wordnikKey;
@@ -53,15 +50,4 @@ function tweetSnozz() {
     });
 }
 
-// // Tweet every 30 minutes
-// setInterval(function () {
-//     try {
-//         tweetLegend();
-//     }
-//     catch (e) {
-//         console.log(e);
-//     }
-// }, 1000 * 60 * 30);
-
-// Tweet once on initialization
 tweetSnozz();
